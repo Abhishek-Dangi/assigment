@@ -1,0 +1,37 @@
+<script>
+    var n , temp,sum=0,rev;
+    n = 153;
+    temp = n;
+    while(temp>0)
+    {
+        rem = temp%10;
+        sum +=rem*rem*rem;
+        temp = parseInt(temp/10);
+    }
+    if(sum == n)
+    {
+        document.write("number is armstong");
+    }
+    else{
+        document.write("not armstong");
+    }
+</script>
+
+
+<script>
+//WAP to check a 3-digit number is armstrong or not
+
+var n=153;
+
+var d1=parseInt(n/100);     // 153/100 =  1.53 but due to parseInt it only 1 is store
+var d2=parseInt(n/10)%10;   // 153/10%10  =   3 is take 
+var d3=n%10;
+
+var res=Math.pow(d1,3)+Math.pow(d2,3)+Math.pow(d3,3);
+
+if(n==res)
+ document.write("<h1>Number armstrong</h1>");
+else
+ document.write("<h1>Number is not armstrong</h1>"); 
+
+</script>

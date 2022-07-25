@@ -1,0 +1,22 @@
+<script>
+    var a='L';
+    document.write("<h1>Before changes string a :"+a+" </h1>")
+    
+    var n = a.charCodeAt();
+    if(n>=65 && n<=90)
+    {
+    document.write("<h1>Upparcase string</h1>");
+    n+=32;
+    }
+    else if(n>=97 && n<=122)
+    {
+    document.write("<h1>Lowercase string</h1>");
+    n-=32;
+    }
+    else
+    {
+    document.write("<h1>Invalid character input</h1>");
+    }
+    a = String.fromCharCode(n)
+    document.write("<h1> after changes a = "+a+"</h1>")
+    </script>

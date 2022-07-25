@@ -1,0 +1,11 @@
+<script>
+    var num = 123;
+    var sum =0;
+    while(num)
+    {
+        var temp = num%10;
+        var sum = temp+sum;
+        num = Math.floor(num/10);
+    }
+    document.write("sum of digits are = " +sum+ "<br>");
+</script>

@@ -1,0 +1,14 @@
+<script>
+    var n = 1234;
+    var rem,temp,sum=0;
+    temp = n;
+    while(n>0)
+    {
+        rem = n %10;
+        sum = sum +rem;
+        document.write(rem);
+        n = parseInt(n/10);
+    }
+    document.write("= reverse number <br>")
+    document.write(sum+" = sum");
+</script>

@@ -1,0 +1,21 @@
+<script>
+    var  n = prompt("");
+    var max =0;
+    var min =n;
+    while(n>0) 
+    {
+        let  rem = n % 10;   
+        if(max<rem)
+        {
+            max  =  rem;
+        }
+        if(min>rem)  
+        {
+           min = rem;    
+        }
+        n = parseInt(n /10);     
+    }
+    document.write("large "+max+"<br>");
+    document.write("small "+min+"<br>");
+
+</script>

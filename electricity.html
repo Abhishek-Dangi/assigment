@@ -1,0 +1,29 @@
+// 37. Write a program for generating electricity Bill
+and print bill amount according to following condition
+For units
+0-100 charges 2 rs/unit
+101-200 charges 3rs/unit
+201-300 4rs/unit
+>300 charges 5rs/unit
+
+<script>
+    var unit = 304;
+    if(100>unit)
+    {
+        let chrg =2;
+        let amut = unit*chrg;
+        document.write("bill amount = " +amut+"<br><br>");
+    }
+    else if(unit<101-200)
+    {
+        let chrg =3;
+        let amut = unit*chrg;
+        document.write("bill amount = " +amut+"<br><br>");
+    }
+else if(unit>301)
+{
+    let chrg =5;
+    let amut = unit*chrg;
+    document.write("bill amount = " +amut+"<br><br>");
+}
+</script>

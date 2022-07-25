@@ -1,0 +1,14 @@
+<script>
+    var n=23432;
+    var min =n;
+    while(n>0)
+    {
+        let rem = n % 10;
+        if(min>rem)
+        {
+            min =rem;
+        }
+        n = parseInt(n/10);
+    }
+    document.write("small number is = "+min);
+</script>
